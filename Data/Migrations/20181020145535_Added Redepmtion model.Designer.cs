@@ -10,8 +10,8 @@ using System;
 namespace ExxonRedeemtion.Data.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    [Migration("20181020130058_add business entities")]
-    partial class addbusinessentities
+    [Migration("20181020145535_Added Redepmtion model")]
+    partial class AddedRedepmtionmodel
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -84,16 +84,16 @@ namespace ExxonRedeemtion.Data.Migrations
 
                     b.Property<int>("Price");
 
-                    b.Property<int>("RedeemtionId");
+                    b.Property<int>("RedemptionId");
 
                     b.HasKey("Id");
 
-                    b.HasIndex("RedeemtionId");
+                    b.HasIndex("RedemptionId");
 
                     b.ToTable("Coupons");
                 });
 
-            modelBuilder.Entity("ExxonRedeemtion.Models.Redeemtion", b =>
+            modelBuilder.Entity("ExxonRedeemtion.Models.Redepmtion", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd();
@@ -104,11 +104,11 @@ namespace ExxonRedeemtion.Data.Migrations
 
                     b.Property<int>("Quantity");
 
-                    b.Property<string>("RedeemDate");
+                    b.Property<DateTime>("RetrieveDate");
 
                     b.HasKey("Id");
 
-                    b.ToTable("Redeemtions");
+                    b.ToTable("Redemptions");
                 });
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRole", b =>
@@ -220,9 +220,9 @@ namespace ExxonRedeemtion.Data.Migrations
 
             modelBuilder.Entity("ExxonRedeemtion.Models.Coupon", b =>
                 {
-                    b.HasOne("ExxonRedeemtion.Models.Redeemtion", "Redeemtion")
-                        .WithMany()
-                        .HasForeignKey("RedeemtionId")
+                    b.HasOne("ExxonRedeemtion.Models.Redepmtion", "Redemption")
+                        .WithMany("Coupons")
+                        .HasForeignKey("RedemptionId")
                         .OnDelete(DeleteBehavior.Cascade);
                 });
 

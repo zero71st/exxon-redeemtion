@@ -8,10 +8,11 @@ using ExxonRedeemtion.Models;
 
 namespace ExxonRedeemtion.Data
 {
+
     public class ApplicationDbContext : IdentityDbContext<ApplicationUser>
     {
-        public virtual DbSet<Redeemtion> Redeemtions {get;set;}
-        public virtual DbSet<Coupon> Coupons {get;set;}
+        public virtual DbSet<Redepmtion> Redemptions {get;set;}
+        public DbSet<Coupon> Coupons {get;set;}
 
         public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options)
             : base(options)

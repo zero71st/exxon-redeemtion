@@ -10,9 +10,10 @@ using System;
 namespace ExxonRedeemtion.Data.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    partial class ApplicationDbContextModelSnapshot : ModelSnapshot
+    [Migration("20181020145104_Added Coupon model")]
+    partial class AddedCouponmodel
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -83,31 +84,9 @@ namespace ExxonRedeemtion.Data.Migrations
 
                     b.Property<int>("Price");
 
-                    b.Property<int>("RedemptionId");
-
                     b.HasKey("Id");
-
-                    b.HasIndex("RedemptionId");
 
                     b.ToTable("Coupons");
-                });
-
-            modelBuilder.Entity("ExxonRedeemtion.Models.Redepmtion", b =>
-                {
-                    b.Property<int>("Id")
-                        .ValueGeneratedOnAdd();
-
-                    b.Property<int>("CouponPrice");
-
-                    b.Property<string>("CustomerName");
-
-                    b.Property<int>("Quantity");
-
-                    b.Property<DateTime>("RetrieveDate");
-
-                    b.HasKey("Id");
-
-                    b.ToTable("Redemptions");
                 });
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRole", b =>
@@ -215,14 +194,6 @@ namespace ExxonRedeemtion.Data.Migrations
                     b.HasKey("UserId", "LoginProvider", "Name");
 
                     b.ToTable("AspNetUserTokens");
-                });
-
-            modelBuilder.Entity("ExxonRedeemtion.Models.Coupon", b =>
-                {
-                    b.HasOne("ExxonRedeemtion.Models.Redepmtion", "Redemption")
-                        .WithMany("Coupons")
-                        .HasForeignKey("RedemptionId")
-                        .OnDelete(DeleteBehavior.Cascade);
                 });
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRoleClaim<string>", b =>
