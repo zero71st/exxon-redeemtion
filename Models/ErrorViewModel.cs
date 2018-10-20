@@ -1,6 +1,6 @@
 using System;
 
-namespace exxon_redeemtion.Models
+namespace ExxonRedeemtion.Models
 {
     public class ErrorViewModel
     {

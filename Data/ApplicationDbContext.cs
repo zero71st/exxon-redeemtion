@@ -4,12 +4,15 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
-using exxon_redeemtion.Models;
+using ExxonRedeemtion.Models;
 
-namespace exxon_redeemtion.Data
+namespace ExxonRedeemtion.Data
 {
     public class ApplicationDbContext : IdentityDbContext<ApplicationUser>
     {
+        public virtual DbSet<Redeemtion> Redeemtions {get;set;}
+        public virtual DbSet<Coupon> Coupons {get;set;}
+
         public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options)
             : base(options)
         {

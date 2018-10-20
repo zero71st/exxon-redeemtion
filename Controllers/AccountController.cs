@@ -10,11 +10,11 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Options;
-using exxon_redeemtion.Models;
-using exxon_redeemtion.Models.AccountViewModels;
-using exxon_redeemtion.Services;
+using ExxonRedeemtion.Models;
+using ExxonRedeemtion.Models.AccountViewModels;
+using ExxonRedeemtion.Services;
 
-namespace exxon_redeemtion.Controllers
+namespace ExxonRedeemtion.Controllers
 {
     [Authorize]
     [Route("[controller]/[action]")]

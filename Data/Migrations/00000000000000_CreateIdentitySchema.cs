@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using Microsoft.EntityFrameworkCore.Migrations;
 
-namespace exxon_redeemtion.Data.Migrations
+namespace ExxonRedeemtion.Data.Migrations
 {
     public partial class CreateIdentitySchema : Migration
     {

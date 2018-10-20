@@ -2,7 +2,7 @@
 
   <PropertyGroup>
     <TargetFramework>netcoreapp2.0</TargetFramework>
-    <UserSecretsId>aspnet-exxon_redeemtion-8CA12B2F-0A7E-4A73-A7AE-C8A89D06CD83</UserSecretsId>
+    <UserSecretsId>aspnet-ExxonRedeemtion-8CA12B2F-0A7E-4A73-A7AE-C8A89D06CD83</UserSecretsId>
   </PropertyGroup>
   <ItemGroup>
     <None Update="app.db" CopyToOutputDirectory="PreserveNewest" />

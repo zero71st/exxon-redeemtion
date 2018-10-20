@@ -4,7 +4,7 @@ using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace exxon_redeemtion.Models.ManageViewModels
+namespace ExxonRedeemtion.Models.ManageViewModels
 {
     public class TwoFactorAuthenticationViewModel
     {

@@ -5,7 +5,7 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.AspNetCore.Mvc.ViewFeatures;
 
-namespace exxon_redeemtion.Views.Manage
+namespace ExxonRedeemtion.Views.Manage
 {
     public static class ManageNavPages
     {

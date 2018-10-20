@@ -8,11 +8,11 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
-using exxon_redeemtion.Data;
-using exxon_redeemtion.Models;
-using exxon_redeemtion.Services;
+using ExxonRedeemtion.Data;
+using ExxonRedeemtion.Models;
+using ExxonRedeemtion.Services;
 
-namespace exxon_redeemtion
+namespace ExxonRedeemtion
 {
     public class Startup
     {

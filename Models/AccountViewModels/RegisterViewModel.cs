@@ -4,7 +4,7 @@ using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace exxon_redeemtion.Models.AccountViewModels
+namespace ExxonRedeemtion.Models.AccountViewModels
 {
     public class RegisterViewModel
     {

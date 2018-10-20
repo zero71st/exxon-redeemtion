@@ -10,11 +10,11 @@ using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Options;
-using exxon_redeemtion.Models;
-using exxon_redeemtion.Models.ManageViewModels;
-using exxon_redeemtion.Services;
+using ExxonRedeemtion.Models;
+using ExxonRedeemtion.Models.ManageViewModels;
+using ExxonRedeemtion.Services;
 
-namespace exxon_redeemtion.Controllers
+namespace ExxonRedeemtion.Controllers
 {
     [Authorize]
     [Route("[controller]/[action]")]
@@ -495,7 +495,7 @@ namespace exxon_redeemtion.Controllers
         {
             return string.Format(
                 AuthenicatorUriFormat,
-                _urlEncoder.Encode("exxon_redeemtion"),
+                _urlEncoder.Encode("ExxonRedeemtion"),
                 _urlEncoder.Encode(email),
                 unformattedKey);
         }

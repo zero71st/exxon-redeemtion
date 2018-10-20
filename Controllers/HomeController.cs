@@ -4,9 +4,9 @@ using System.Diagnostics;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
-using exxon_redeemtion.Models;
+using ExxonRedeemtion.Models;
 
-namespace exxon_redeemtion.Controllers
+namespace ExxonRedeemtion.Controllers
 {
     public class HomeController : Controller
     {

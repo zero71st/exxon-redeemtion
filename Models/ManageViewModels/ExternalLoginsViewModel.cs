@@ -5,7 +5,7 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Authentication;
 using Microsoft.AspNetCore.Identity;
 
-namespace exxon_redeemtion.Models.ManageViewModels
+namespace ExxonRedeemtion.Models.ManageViewModels
 {
     public class ExternalLoginsViewModel
     {
