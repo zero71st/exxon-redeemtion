@@ -17,7 +17,7 @@
     </environment>
 </head>
 <body>
-    <nav class="navbar navbar-fixed-top navbar-light bg-primary">
+    <nav class="navbar navbar-fixed-top navbar-dark bg-danger">
         <div class="container">
             <div class="navbar-header">
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
@@ -26,10 +26,11 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a asp-area="" asp-controller="Home" asp-action="Index" class="navbar-brand">ExxonRedeemtion</a>
+                <a asp-area="" asp-controller="Home" asp-action="Index" class="navbar-brand">EXXON</a>
             </div>
             <div class="navbar-collapse collapse">
                 <ul class="nav navbar-nav">
+                    <li><a asp-area="" asp-controller="Redemption" asp-action="Index">Redemptions</a></li>
                     <li><a asp-area="" asp-controller="Home" asp-action="Index">Home</a></li>
                     <li><a asp-area="" asp-controller="Home" asp-action="Contact">Contact</a></li>
                 </ul>
@@ -41,7 +42,7 @@
         @RenderBody()
         <hr />
         <footer>
-            <p>&copy; 2018 - EXXON - REDEEMIION</p>
+            <p>&copy; 2018 - EXXON - REDEMPTION</p>
         </footer>
     </div>
 

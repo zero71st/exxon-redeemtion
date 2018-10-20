@@ -11,7 +11,7 @@ namespace ExxonRedeemtion.Data
 
     public class ApplicationDbContext : IdentityDbContext<ApplicationUser>
     {
-        public virtual DbSet<Redepmtion> Redemptions {get;set;}
+        public DbSet<Redepmtion> Redemptions {get;set;}
         public DbSet<Coupon> Coupons {get;set;}
 
         public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options)
